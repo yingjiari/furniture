@@ -1,5 +1,4 @@
 # furniture
-（项目做的不好，勿喷）
 项目首页
 ![项目首页](https://github.com/yingjiari/furniture/blob/master/Ying-webui/src/main/webapp/images/zs05.png)
 登录有做判断用户和密码，密码加密
@@ -22,3 +21,4 @@
 基于h-ui模板做的项目后台，实现基本增删（多删除）改查，上传图片，导入导出xlsx数据，多条件模糊查询，分页等
 ![项目登录](https://github.com/yingjiari/furniture/blob/master/Ying-webui/src/main/webapp/images/zs12.png)
 ![项目登录](https://github.com/yingjiari/furniture/blob/master/Ying-webui/src/main/webapp/images/zs13.png)
+项目还有功能没做好，各方面都有待提升和学习
