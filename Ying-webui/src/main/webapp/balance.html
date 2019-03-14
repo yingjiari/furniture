@@ -1,0 +1,519 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>填写订单信息</title>
+	<meta name="description" content="">
+	<meta name="robots" content="noindex, follow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex, follow" />
+    <!--All Css Here-->
+
+    <!-- Bootstrap CSS-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Linearicon CSS-->
+    <link rel="stylesheet" href="css/linearicons.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Animate CSS-->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Owl Carousel CSS-->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<!-- Slick CSS-->
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- Meanmenu CSS-->
+	<link rel="stylesheet" href="css/meanmenu.min.css">
+	<!-- Easyzoom CSS-->
+	<link rel="stylesheet" href="css/easyzoom.css">
+	<!-- Venobox CSS-->
+	<link rel="stylesheet" href="css/venobox.css">
+	<!-- Jquery Ui CSS-->
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<!-- Nice Select CSS-->
+	<link rel="stylesheet" href="css/nice-select.css">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- Modernizr Js -->
+	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <style>
+		#zb{width:1100px;padding-bottom: 10px;background-color: #f5f5f5;margin: 20px auto;border:1px solid white}
+		#zb-div00,#zb-div01,#zb-div02,#zb-div03,#zb-div04,#zb-div06,#zb-div07{width:1000px;padding-bottom: 10px;font-size: 18px;margin: 0px auto 0 auto;line-height: 80px;}
+		#zb-div01{border-bottom:1px solid #000}
+		/*.dz01:active{border:1px solid red;width:298px;height:198px;}*/
+		.dz01:hover{cursor: pointer;}
+		.dz01{width:300px;height:200px;background-color:white;margin: 0px 10px 0px 0;display: inline-block;}
+		.dz01 dl{}
+		.dz01 dt{width:300px;height: 40px;}
+		.dz01 dd,.dz01 span,.dz01 em{line-height: 20px;margin: 0 10px 0 0;}
+		.dz01 span{margin-right: 20px;float: right;margin-top: 10px}
+		.dz01 em{margin-left: 20px;float: left;margin-top:10px;}
+		.dz01 dd{margin-left: 20px;margin-top: 10px;float: left;}
+		.dz01 dd,.dz01 span{font-size: 16px;color: #757575;}
+		#zb-div03{border-bottom:1px solid #000;margin-top: -20px}
+		#zb-div03 .li01{width:1000px;height: 50px;margin:10px 0 10px 0;list-style-type:none;display: inline-block}
+		.li01 img{width: 60px;height: 50px;margin-top: -28px}
+		.li01 .span02{float: right;margin-right: 20px;color: red}
+		.li01 .span03{float: right;margin-right: 120px}
+		#zb-div07{border-top:1px solid #000}
+		#zb-div04{margin-top: 0px;margin-bottom: -40px}
+		#zb-div04 span{margin-left: 60px;color:red;}
+		#zb-div06 em{margin-left: 60px;color:red;}
+		#zb-div06{line-height: 30px}
+		#zb-div07 a{cursor: pointer;width:100px;height:50px;background-color: #5FB878;text-align:center;line-height:50px;margin-left: 900px;margin-top:10px;display: inline-block}
+
+		/*弹出框*/
+		.box{width: 100%;height: 100%;}
+		.main{width: 100%;height: 100%;background-color: rgba(0,0,0,0.8);display: none;position: fixed;z-index: 9999;}
+		.mainbox{width: 600px;height: 400px;margin: 0px auto;margin-top:60px;background-color:#fff;display: none;}
+		.kkk{width: 100%;height: 1200px;background-color: red;}
+		.close{color: red;cursor: pointer;}
+		.mainbox-f{width:100%;height:50px;background-color: #f5f5f5;font-size: 22px;line-height: 50px;text-indent:20px;}
+		.mainbox-f div{width:30px;height: 30px;float: right;margin: 6px 6px 0 0;border-radius:25px;font-size: 26px;text-indent:3px;line-height: 30px;}
+		.mainbox-f div:hover{cursor: pointer;background-color: #5FB878;}
+		.dz{width: 250px;height: 40px; border: 0px; border: 1px solid #CCCCCC;margin: 10px 0px;margin-left: 30px; font-size: 15px; outline:none;cursor: pointer;}
+		.ds{width:530px;height: 80px;}
+		.ds01{width:530px;height: 40px;}
+		.mainbox-w{width:100%;height:100px;background-color: #f5f5f5;margin-top: 20px;}
+		#btn,#btns{cursor: pointer;width: 220px;height: 50px; border: 0; background-color: #5FB878; border-radius: 2px; font-size: 18px; border: 1px solid white;  font-family:"宋体";font-weight:600;margin: 30px 0 10px 55px;border-radius:5px;outline:none;}
+		.btnn{cursor: pointer;outline:none;width: 150px;height: 40px;line-height: 0px}
+		#btns{background-color: #b0b0b0;}
+		#btns:hover{background-color: #3B4249;}
+    </style>
+</head>
+<body>
+<!--弹出框-->
+<div class="main">
+	<div class="mainbox">
+		<div class="mainbox-f">添加收货地址<div>×</div></div>
+		<!--<input type="text" placeholder="用户名" class="dz ds01" id="siteName"/>-->
+		<input type="text" placeholder="手机号" class="dz ds01" id="siteCellphone"/>
+
+		<input type="text" placeholder="详细地址" class="dz ds" id="siteDeta" />
+		<input type="text" placeholder="邮政编号" class="dz" id="siteMails"/>
+		<input type="text" placeholder="地址标签" class="dz" id="siteTag"/>
+		<div class="mainbox-w"><button id="btn">确定保存</button><button id="btns">取消</button></div>
+	</div>
+</div>
+
+
+	<!--[if lt IE 8]>
+	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+
+	<div class="wrapper">
+		<!--Header Area Start-->
+		<header>
+		    <div class="header-container">
+		        <div class="header-area header-sticky pt-30 pb-30">
+                    <div class="container">
+                        <div class="row">
+                            <!--Header Logo Start-->
+                            <div class="col-lg-3 col-md-3">
+                                <div class="logo-area">
+                                    <a href="index.html">
+                                        <img src="img/logo/zslogo5.png" alt="" style="background-size:50% 50%;width:146px;height:68px;">
+                                    </a>
+                                </div>
+                            </div>
+                            <!--Header Logo End-->
+                            <!--Header Menu And Mini Cart Start-->
+                            <div class="col-lg-9 col-md-9 text-lg-right">
+                                <!--Main Menu Area Start-->
+                                <div class="header-menu">
+                                    <nav>
+                                        <ul class="main-menu">
+                                            <li><a href="classify01.html">家</a></li>
+                                            <li><a href="shop.html">店</a></li>
+                                            <li><a href="dl.html">登录</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!--Main Menu Area End-->
+                                <!--Header Option Start-->
+                                <div class="header-option">
+                                    <div class="mini-cart-search">
+                                        <div class="mini-cart">
+                                            <a href="single-product02.html">
+                                               <span class="cart-icon">
+
+                                                </span>
+                                                <span class="cart-title"><a href="single-product02.html">购物车 <br><strong></strong></span>
+                                            </a>
+                                           <!--Cart Dropdown Start-->
+
+                                           <!--Cart Dropdown End-->
+                                        </div>
+                                        <div class="header-search">
+                                            <div class="search-box">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                                <div class="search-dropdown">
+                                                    <form action="#">
+                                                        <input name="search" id="search" placeholder="" value="Search product..." onblur="if(this.value==''){this.value='Search product...'}" onfocus="if(this.value=='Search product...'){this.value=''}" type="text">
+                                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="currency">
+                                            <div class="currency-box">
+                                                <a href="#"><i class="fa fa-th"></i></a>
+                                                <div class="currency-dropdown">
+                                                    <ul class="menu-top-menu">
+                                                        <li><a href="#">我的购物车</a></li>
+                                                        <li><a href="#">已买到的宝贝</a></li>
+                                                        <li><a href="#">我的收藏</a></li>
+                                                        <li><a href="#">评价管理</a></li>
+                                                        <li><a href="#">我的足迹</a></li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Header Option End-->
+                            </div>
+                            <!--Header Menu And Mini Cart End-->
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <!--Mobile Menu Area Start-->
+                                <div class="mobile-menu d-lg-none"></div>
+                                <!--Mobile Menu Area End-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+		    </div>
+		</header>
+
+		<div id="zb">
+			<div id="zb-div00">收货地址<button class="btnn">添加地址</button></div>
+			<div id="zb-div01">
+				<!--<div class="dz01">-->
+					<!--<dl>-->
+						<!--<dt>-->
+							<!--<span class="tag">学校</span>-->
+							<!--<em class="uname">殷家日</em>-->
+						<!--</dt>-->
+						<!--<dd class="utel">130****2212</dd>-->
+						<!--<dd class="uaddress">广东 珠海市 斗门区 白蕉镇<br> 珠海市斗门区白蕉镇白蕉南路29号南方IT培训学院 </dd>-->
+					<!--</dl>-->
+				<!--</div>-->
+				<!--<div class="dz01 btnn" style="text-align: center;line-height: 130px">添加地址</div>-->
+			</div>
+			<div id="zb-div02">购买商品</div>
+			<div id="zb-div03">
+				<ul>
+					<!--<li class="li01">-->
+						<!--<img src="img/product/shafa1.JPG" />-->
+						<!--<span class="span01">真皮沙发</span>-->
+						<!--<span class="span02">1200+1</span>-->
+						<!--<span class="span03">1212</span>-->
+					<!--</li>-->
+					<!--<li class="li01">-->
+						<!--<img src="img/product/shafa1.JPG" />-->
+						<!--<span class="span01">真皮沙发</span>-->
+						<!--<span class="span02">1200+1</span>-->
+						<!--<span class="span03">1212</span>-->
+					<!--</li>-->
+					<!--<li class="li01">-->
+						<!--<img src="img/product/shafa1.JPG" />-->
+						<!--<span class="span01">真皮沙发</span>-->
+						<!--<span class="span02">1200+1</span>-->
+						<!--<span class="span03">1212</span>-->
+					<!--</li>-->
+				</ul>
+			</div>
+			<div id="zb-div04">配送方式:<span>包邮</span></div>
+			<div id="zb-div06">
+				<!--<span>商品数量:<em>3</em>件</span><br/>-->
+				<!--<span>商品总价:<em>1233</em>元</span>-->
+			</div>
+			<div id="zb-div07"><a>去结算</a></div>
+		</div>
+		<footer>
+		    <div class="footer-container">
+		        <!--Footer Top Area Start-->
+		        <div class="footer-top-area black-bg">
+		            <div class="container">
+		                <div class="row">
+		                    <div class="col-lg-3 col-md-6">
+		                        <!--Single Footer Widget Start-->
+		                        <div class="single-footer-widget mb-40">
+		                            <div class="footer-title">
+		                                <h3>我的账户</h3>
+		                            </div>
+		                            <ul class="link-widget">
+		                                <li><a href="#">关于我们</a></li>
+		                                <li><a href="#">团队成员</a></li>
+		                                <li><a href="#">职业生涯</a></li>
+		                                <li><a href="#">特价商品</a></li>
+		                                <li><a href="shop.html">畅销书</a></li>
+		                                <li><a href="#">我们的商店</a></li>
+		                                <li><a href="#">联系我们</a></li>
+		                            </ul>
+		                        </div>
+		                        <!--Single Footer Widget End-->
+		                    </div>
+		                    <div class="col-lg-3 col-md-6">
+		                        <!--Single Footer Widget Start-->
+		                        <div class="single-footer-widget mb-40">
+		                            <div class="footer-title">
+		                                <h3>问询处</h3>
+		                            </div>
+		                            <ul class="link-widget">
+		                                <li><a href="#">关于我们</a></li>
+		                                <li><a href="#">联系我们</a></li>
+		                                <li><a href="#">我的命令</a></li>
+		                                <li><a href="#">条款与条件</a></li>
+		                                <li><a href="#">收益与交换</a></li>
+		                                <li><a href="#">船运</a></li>
+		                                <li><a href="#">隐私政策</a></li>
+		                            </ul>
+		                        </div>
+		                        <!--Single Footer Widget End-->
+		                    </div>
+		                    <div class="col-lg-3 col-md-6">
+		                        <!--Single Footer Widget Start-->
+		                        <div class="single-footer-widget mb-40">
+		                            <div class="footer-title">
+		                                <h3>快速链接</h3>
+		                            </div>
+		                            <ul class="link-widget">
+		                                <li><a href="#">支援中心</a></li>
+		                                <li><a href="#">条款与条件</a></li>
+		                                <li><a href="#">船运</a></li>
+		                                <li><a href="#">隐私政策</a></li>
+		                                <li><a href="#">帮助</a></li>
+		                                <li><a href="#">产品退货</a></li>
+		                                <li><a href="#">常见问题解答</a></li>
+		                            </ul>
+		                        </div>
+		                        <!--Single Footer Widget End-->
+		                    </div>
+		                    <div class="col-lg-3 col-md-6">
+		                        <!--Single Footer Widget Start-->
+		                        <div class="single-footer-widget mb-40">
+		                            <div class="footer-title">
+		                                <h3>类别</h3>
+		                            </div>
+		                            <ul class="link-widget">
+		                                <li><a href="#">卧室</a></li>
+		                                <li><a href="#">家具</a></li>
+		                                <li><a href="#">客堂</a></li>
+		                                <li><a href="#">手机及平板电脑</a></li>
+		                                <li><a href="#">男人</a></li>
+		                                <li><a href="#">女人</a></li>
+		                                <li><a href="#">配件</a></li>
+		                            </ul>
+		                        </div>
+		                        <!--Single Footer Widget End-->
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		        <!--Footer Top Area End-->
+		        <!--Footer Middle Area Start-->
+            </div>
+		</footer>
+	</div>
+</body>
+<script src="js3/jquery-1.11.1.min.js"></script>
+<script>
+	// 弹出框
+    $(function(){
+        $(".btnn").click(function(){
+            $(".main").fadeIn();
+            $(".mainbox").delay(500).slideDown();
+        });
+        $("#btns").click(function(){
+            $(".main").fadeOut();
+        });
+        $(".mainbox-f div").click(function(){
+            $(".main").fadeOut();
+        });
+    });
+
+    $("#btn").click(function () {
+		// var siteName=$("#siteName").val();
+		var siteCellphone=$("#siteCellphone").val();
+		var siteMails=$("#siteMails").val();
+		var siteDeta=$("#siteDeta").val();
+		var siteTag=$("#siteTag").val();
+        $.get("http://localhost:8080/goods/querySiteInsert/",{"customerName":sessionStorage.getItem("customerName"),"siteCellphone":siteCellphone,"siteDetails":siteDeta,"siteMail":siteMails,"siteTag":siteTag,"siteBoolean":0}).done(function(data){
+      		list();
+        }).fail(function(xhr, status, errorThrown){
+            alert("xhr："+xhr+"，status："+status+"，errorThrown："+errorThrown);
+        }).always(function(data, textStatus){
+            console.log("ajax执行完成，完成状态："+textStatus);
+        });
+    });
+
+	var show=function(){
+	    if(sessionStorage.getItem("customerName")!=null){
+            var li01=$("<li><a href='dl.html'>用户_"+sessionStorage.getItem("customerName")+"</a></li>");
+            $(".main-menu li:last").remove();
+            $(".main-menu").append(li01);
+		}
+	}
+	show();
+    var list=function () {
+        var orderGoods="";
+        var zj=0;
+        $.get("http://localhost:8080/goods/queryShopping/",{"customerName":sessionStorage.getItem("customerName"),"shoppingBoolean":1}).done(function(data){
+            if(data.code==1){
+                $.each(data.data,function (index,obj) {
+               		var li01=$("<li class=\"li01\">\n" +
+                        "                        <img src=\"img/product/"+obj.goodsonImg+"\" />\n" +
+                        "                        <span class=\"span01\">"+obj.goodsName+"["+obj.goodsonName+"]</span>\n" +
+                        "                        <span class=\"span02\">"+(obj.goodsonPrice*obj.shoppingNumber)+"</span>\n" +
+                        "                        <span class=\"span03\">"+obj.goodsonPrice+"×"+obj.shoppingNumber+"</span>\n" +
+                        "                        </li>");
+               		$("#zb-div03 ul").append(li01);
+               		zj+=obj.goodsonPrice*obj.shoppingNumber;
+               		if(index+1==data.data.length){
+               		    var span01=$("<span>商品数量:<em>"+(index+1)+"</em>件</span><br/>\n" +
+                            "\t\t\t\t<span>商品总价:<em>"+zj+"</em>元</span>");
+               		    $("#zb-div06").append(span01);
+					}
+					orderGoods+=obj.goodsName+"["+obj.goodsonName+"]";
+                })
+            }
+        }).fail(function(xhr, status, errorThrown){
+            alert("xhr："+xhr+"，status："+status+"，errorThrown："+errorThrown);
+        }).always(function(data, textStatus){
+            console.log("ajax执行完成，完成状态："+textStatus);
+        });
+        var arr ="";//存放随机数的数组
+        $("#zb-div07 a").click(function () {
+            var arrLen = 5;//数组长度，也用来限制范围
+            for(var i=0; i<arrLen; i++){
+                var radomNum = parseInt(Math.random() * arrLen) + 1;//对利用random生成的随机数处理后得到1~5的整数
+                if(arr.indexOf(radomNum) == -1){
+                    //indexOf返回值为-1表示数组中没有和新随机数重复的值
+                    arr+=radomNum;
+                }else{
+                    //有重复值i--，不添加重复的值到数组中，并再循环一次
+                    i--;
+                }
+            }
+            // alert(arr);
+            $.get("http://localhost:8080/goods/queryOrder/",{}).done(function(data){
+                if(data.code==1){
+                    $.each(data.data,function (index,obj) {
+                        if(arr==obj.orderId){
+                            $("#zb-div07 a").click();
+                        }else{
+                            // alert("编号不一样");
+                        }
+                    })
+                }
+            }).fail(function(xhr, status, errorThrown){
+                alert("xhr："+xhr+"，status："+status+"，errorThrown："+errorThrown);
+            }).always(function(data, textStatus){
+				$.get("http://localhost:8080/goods/queryOrderInsert/",{"customerName":sessionStorage.getItem("customerName"),"orderBoolean":0,"orderId":arr,"orderGoods":orderGoods,"orderPrice":zj}).done(function(data){
+                }).fail(function(xhr, status, errorThrown){
+                    alert("xhr："+xhr+"，status："+status+"，errorThrown："+errorThrown);
+                }).always(function(data, textStatus){
+                    $.get("http://localhost:8080/goods/queryShopping/",{"customerName":sessionStorage.getItem("customerName"),"shoppingBoolean":1}).done(function(data){
+                        if(data.code==1){
+                            $.each(data.data,function (index,obj) {
+								$.get("http://localhost:8080/goods/queryordertedailsInsert/",{"orderId":arr,"goodsonId":obj.goodsonId,"goodsonNumber":obj.shoppingNumber}).done(function(data){
+								}).fail(function(xhr, status, errorThrown){
+									// alert("我xhr："+xhr+"，status："+status+"，errorThrown："+errorThrown);
+								}).always(function(data, textStatus){
+									// window.location.href = "balance02.html?zvalue="+arr;
+									console.log("ajax执行完成，完成状态："+textStatus);
+								});
+								if(data.data.length==index+1){
+                                    $.get("http://localhost:8080/goods/queryShoppingsDelete/",{"customerName":sessionStorage.getItem("customerName"),"shoppingBoolean":1}).done(function(data){
+                                    }).fail(function(xhr, status, errorThrown){
+                                        alert("xhr："+xhr+"，status："+status+"，errorThrown："+errorThrown);
+                                    }).always(function(data, textStatus){
+                                        window.location.href = "balance02.html?zvalue="+arr;
+                                        console.log("ajax执行完成，完成状态："+textStatus);
+                                    });
+								}
+                            })
+                        }
+                    }).fail(function(xhr, status, errorThrown){
+                        alert("xhr："+xhr+"，status："+status+"，errorThrown："+errorThrown);
+                    }).always(function(data, textStatus){
+                        // window.location.href = "balance02.html?zvalue="+arr;
+                        console.log("ajax执行完成，完成状态："+textStatus);
+                    });
+
+                    console.log("ajax执行完成，完成状态："+textStatus);
+                });
+				console.log("ajax执行完成，完成状态："+textStatus);
+            });
+        });
+        $.get("http://localhost:8080/goods/querySites/",{"customerName":sessionStorage.getItem("customerName"),"siteBoolean":-1}).done(function(data){
+            if(data.code==1){
+                $.each(data.data,function (index,obj) {
+					var div01=("<div class=\"dz01\" id='dz0"+index+"'>\n" +
+                        "\t\t\t\t\t<dl>\n" +
+                        "\t\t\t\t\t\t<dt>\n" +
+                        "\t\t\t\t\t\t\t<span class=\"tag\">"+obj.siteTag+"</span>\n" +
+                        "\t\t\t\t\t\t\t<em class=\"uname\">"+obj.customerName+"</em>\n" +
+                        "\t\t\t\t\t\t</dt>\n" +
+                        "\t\t\t\t\t\t<dd class=\"utel\">"+obj.siteCellphone+"</dd>\n" +
+                        "\t\t\t\t\t\t<dd class=\"uaddress\">"+obj.siteSave+"&nbsp"+obj.siteCity+"&nbsp"+obj.siteDistrict+"&nbsp"+obj.siteTown+"<br> "+obj.siteDetails+"</dd>\n" +
+                        "\t\t\t\t\t</dl>\n" +
+                        "\t\t\t\t</div>");
+					$("#zb-div01").append(div01);
+					$("#dz0"+index).click(function () {
+					    var siteId=obj.siteId;
+                        $(".dz01").css({"border":"1px solid white"});
+                        $(this).css({"border":"1px solid red"});
+                        $.get("http://localhost:8080/goods/querySites/",{"customerName":sessionStorage.getItem("customerName"),"siteBoolean":-1}).done(function(data){
+                            if(data.code==1){
+                                $.each(data.data,function (index,obj) {
+									if(obj.siteBoolean==1){
+                                        $.get("http://localhost:8080/goods/querySiteUpdate/",{"siteId":obj.siteId,"siteBoolean":0}).done(function(data){
+                                            // alert("修改成功1");
+                                        }).fail(function(xhr, status, errorThrown){
+                                            alert("xhr："+xhr+"，status："+status+"，errorThrown："+errorThrown);
+                                        }).always(function(data, textStatus){
+                                            console.log("ajax执行完成，完成状态："+textStatus);
+                                        });
+                                    }
+								})
+							}
+						}).fail(function(xhr, status, errorThrown){
+							alert("xhr："+xhr+"，status："+status+"，errorThrown："+errorThrown);
+						}).always(function(data, textStatus){
+                            function test(){
+                                $.get("http://localhost:8080/goods/querySiteUpdate/",{"siteId":siteId,"siteBoolean":1}).done(function(data){
+                                    // alert("修改成功2");
+                                }).fail(function(xhr, status, errorThrown){
+                                    alert("xhr："+xhr+"，status："+status+"，errorThrown："+errorThrown);
+                                }).always(function(data, textStatus){
+                                    console.log("ajax执行完成，完成状态："+textStatus);
+                                });
+							}
+                            setTimeout(function(){
+                                //这里写时间到后执行的代码
+                                test();
+                            }, 1000);
+							console.log("ajax执行完成，完成状态："+textStatus);
+						});
+					});
+                })
+            }
+        }).fail(function(xhr, status, errorThrown){
+            alert("xhr："+xhr+"，status："+status+"，errorThrown："+errorThrown);
+        }).always(function(data, textStatus){
+            console.log("ajax执行完成，完成状态："+textStatus);
+        });
+    }
+	list();
+</script>
+</html>
+

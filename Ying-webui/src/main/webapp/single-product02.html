@@ -1,0 +1,1322 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>购物车</title>
+    <meta name="description" content="">
+    <meta name="robots" content="noindex, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, follow" />
+    <!--All Css Here-->
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Linearicon CSS-->
+    <link rel="stylesheet" href="css/linearicons.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Animate CSS-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Owl Carousel CSS-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Slick CSS-->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- Meanmenu CSS-->
+    <link rel="stylesheet" href="css/meanmenu.min.css">
+    <!-- Easyzoom CSS-->
+    <link rel="stylesheet" href="css/easyzoom.css">
+    <!-- Venobox CSS-->
+    <link rel="stylesheet" href="css/venobox.css">
+    <!-- Jquery Ui CSS-->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <!-- Nice Select CSS-->
+    <link rel="stylesheet" href="css/nice-select.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Modernizr Js -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <style>
+        #div01{
+            width: 1000px;
+            height: 60px;
+            background-color: #abd373;
+            margin: 20px auto;
+            border-radius:5px;
+        }
+        #div02{
+            width: 1000px;
+            padding-bottom: 10px;
+            border: 1px solid #abd373;
+            margin: 20px auto;
+            border-radius:5px;
+
+        }
+        #div03{
+            width: 1000px;
+            height: 60px;
+            background-color: #abd373;
+            margin: 20px auto;
+            border-radius:5px;
+        }
+        #div01 li{
+            list-style-type:none;
+            float: left;
+            margin-right:100px;
+            line-height: 60px;
+        }
+        #li02{margin-left: 30px}
+        #li01{
+            margin-left: 150px;
+        }
+        #div03 .a01{
+            text-decoration:none;
+            line-height: 60px;
+            border-right:1px solid white ;
+            padding-right:10px ;
+            margin:0 10px 0 20px;
+            color: #000000;
+        }
+        #div03 .a02{
+            float: right;
+            width: 100px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            background-color: #84AD32;
+            border-bottom-right-radius:5px;
+            border-top-right-radius:5px;
+            color: #000000;
+            text-decoration:none;
+        }
+        .div02-div01{
+            width: 990px;
+            height: 100px;
+            background-color: #f5f5f5;
+            margin: 10px auto;
+            border: 1px solid white;
+        }
+        #div02 img{
+            width: 80px;
+            height: 60px;
+
+        }
+        #div02 input{
+            width: 40px;
+            height: 30px;
+
+        }
+        #div02 .button01{
+            width: 30px;
+            height: 30px;
+        }
+        #div02 .button02{
+            width: 30px;
+            height: 30px;
+        }
+        .div02-div01 div{width: 990px;height: 70px;margin-top: -50px;}
+        #div02 .gg{margin-left: 30px;}
+        #div02 img{margin-left: 30px;margin-bottom: 10px}
+        #div02 .span00{width:200px;height:50px;display:inline-block;}
+        #div02 .span01{margin-left:60px;margin-right: 50px;}
+        #div02 .span02{margin-left: 40px;}
+        #div02 .button02{margin-left: 60px;}
+        #div03 .span01 em{color:red}
+        #div03 .span02{color: red;margin-left: 520px }
+        #div03 .span02 em{font-size: 22px }
+    </style>
+</head>
+<body>
+
+
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="wrapper">
+    <!--Header Area Start-->
+    <header>
+        <div class="header-container">
+            <!--header-sticky-->
+            <div class="header-area pt-30 pb-30">
+                <div class="container">
+                    <div class="row">
+                        <!--Header Logo Start-->
+                        <div class="col-lg-3 col-md-3">
+                            <div class="logo-area">
+                                <a href="index.html">
+                                    <img src="img/logo/zslogo5.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!--Header Logo End-->
+                        <!--Header Menu And Mini Cart Start-->
+                        <div class="col-lg-9 col-md-9 text-lg-right">
+                            <!--Main Menu Area Start-->
+                            <div class="header-menu">
+                                <nav>
+                                    <ul class="main-menu">
+                                        <li><a href="classify01.html">家</a></li>
+                                        <li><a href="shop.html">店</a></li>
+                                        <li><a href="dl.html">登录</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!--Main Menu Area End-->
+                            <!--Header Option Start-->
+                            <div class="header-option">
+                                <div class="mini-cart-search">
+                                    <div class="mini-cart">
+                                        <a href="single-product02.html">
+                                                <span class="cart-icon">
+
+                                                </span>
+                                            <span class="cart-title">购物车 <br><strong></strong></span>
+                                        </a>
+                                        <!--Cart Dropdown Start-->
+
+                                        <!--Cart Dropdown End-->
+                                    </div>
+                                    <div class="header-search">
+                                        <div class="search-box">
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                            <div class="search-dropdown">
+                                                <form action="#">
+                                                    <input name="search" id="search" placeholder="" value="Search product..." onblur="if(this.value==''){this.value='Search product...'}" onfocus="if(this.value=='Search product...'){this.value=''}" type="text">
+                                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="currency">
+                                        <div class="currency-box">
+                                            <a href="#"><i class="fa fa-th"></i></a>
+                                            <div class="currency-dropdown">
+                                                <ul class="menu-top-menu">
+                                                    <li><a href="#">My Account</a></li>
+                                                    <li><a href="#">Wishlist</a></li>
+                                                    <li><a href="#">Shopping cart</a></li>
+                                                    <li><a href="#">Checkout</a></li>
+                                                    <li><a href="#">Log In</a></li>
+                                                </ul>
+                                                <div class="switcher">
+                                                    <div class="language">
+                                                        <span class="switcher-title">Language: </span>
+                                                        <div class="switcher-menu">
+                                                            <ul>
+                                                                <li><a href="#">English</a>
+                                                                    <ul class="switcher-dropdown">
+                                                                        <li><a href="#">German</a></li>
+                                                                        <li><a href="#">French</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="currency">
+                                                        <span class="switcher-title">Currency: </span>
+                                                        <div class="switcher-menu">
+                                                            <ul>
+                                                                <li><a href="#">$ USD</a>
+                                                                    <ul class="switcher-dropdown">
+                                                                        <li><a href="#"> EUR</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Header Option End-->
+                        </div>
+                        <!--Header Menu And Mini Cart End-->
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <!--Mobile Menu Area Start-->
+                            <div class="mobile-menu d-lg-none"></div>
+                            <!--Mobile Menu Area End-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Header Area End-->
+    <!--Breadcrumb One Start-->
+
+    <!--<div class="breadcrumb-one mb-120">-->
+    <!--<div class="container">-->
+    <!--<div class="row">-->
+    <!--<div class="col-12">-->
+    <!--<div class="breadcrumb-img" >-->
+    <!--<img src="img/page-banner/qyyh2.jpg" alt="" style="width:1170px;height:241px;">-->
+    <!--</div>-->
+    <!--<div class="breadcrumb-content">-->
+    <!--<ul>-->
+    <!--<li><a href="index.html">家</a></li>-->
+    <!--<li class="active">单品</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!--Breadcrumb One End-->
+    <!--Single Product Area Start-->
+    <div class="single-product-area mb-115">
+        <div id="div01">
+            <ul>
+                <li id="li02">勾选</li>
+                <li >商品名称</li>
+                <li id="li01">单价</li>
+                <li>数量</li>
+                <li>小计</li>
+                <li>操作</li>
+            </ul>
+        </div>
+        <div id="div02">
+            <!--<div class="div02-div01">-->
+                <!--<input type="checkbox" class="gg">-->
+                <!--<img src="img/animal/1.jpg"  />-->
+                <!--<span>欧式真皮沙发</span>-->
+                <!--<span class="span01">3990元</span>-->
+                <!--<button class="button01">-</button>-->
+                <!--<input type="text" />-->
+                <!--<button class="button01">+</button>-->
+                <!--<span class="span02">2009元</span>-->
+                <!--<button class="button02"></button>-->
+            <!--</div>-->
+            <!--<div class="div02-div01">-->
+                <!--<input type="checkbox" class="gg">-->
+                <!--<img src="img/animal/1.jpg"  />-->
+                <!--<span>欧式真皮沙发</span>-->
+                <!--<span class="span01">3990元</span>-->
+                <!--<button class="button01">-</button>-->
+                <!--<input type="text" />-->
+                <!--<button class="button01">+</button>-->
+                <!--<span class="span02">2009元</span>-->
+                <!--<button class="button02"></button>-->
+            <!--</div>-->
+            <!--<div class="div02-div01">-->
+                <!--<input type="checkbox" class="gg">-->
+                <!--<img src="img/animal/1.jpg"  />-->
+                <!--<span>欧式真皮沙发</span>-->
+                <!--<span class="span01">3990元</span>-->
+                <!--<button class="button01">-</button>-->
+                <!--<input type="text" />-->
+                <!--<button class="button01">+</button>-->
+                <!--<span class="span02">2009元</span>-->
+                <!--<button class="button02"></button>-->
+            <!--</div>-->
+        </div>
+        <div id="div03">
+            <a href="#" class="a01">继续购物</a>
+            <span class="span01">共<em class="em01">0</em>件商品，已选<em class="em02">0</em>件</span>
+            <span class="span02">合计:<em class="em03">0</em>元</span>
+            <a href="balance.html" class="a02">结算</a>
+        </div>
+    </div>
+    <!--Single Product Area End-->
+    <!--Product Description Review Area Start-->
+    <div class="product-description-review-area mb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-review-tab">
+                        <!--Review And Description Tab Menu Start-->
+                        <ul class="nav dec-and-review-menu">
+                            <li>
+                                <a class="active" data-toggle="tab" href="#description">商品介绍</a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#reviews"></a>
+                            </li>
+                        </ul>
+                        <!--Review And Description Tab Menu End-->
+                        <!--Review And Description Tab Content Start-->
+                        <div class="tab-content product-review-content-tab" id="myTabContent-4">
+                            <div class="tab-pane fade active show" id="description">
+                                <div class="single-product-description">
+                                    <p>时尚真皮床欧式田园风格，它能让我们享受到*皇族卧室的华丽的待遇。时尚真皮床采用经典的描金装饰，精致而富有文化韵味，它采用头层真皮打造，触感柔软舒适，能让我们睡在上面时更加放松，睡眠质量也能得到提高。真皮床的床头床位使用了对称式雕花设计，具有一种恢弘的气势，能为我们打造出贵族般的优雅与奢华。</p>
+                                    <p>时尚真皮床美式风格。使用这样的时尚真皮床能够让我们享受优越的美式生活，感受君临天下的气势与王者风范，睡觉也成了一种享受。时尚真皮床的雕刻精美，造型优雅，它的皮质能让我们感觉到更加舒适的质感，享受更好的睡眠生活。</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="reviews">
+                                <div class="review-page-comment">
+                                    <h2>1 review for Sit voluptatem</h2>
+                                    <ul>
+                                        <li>
+                                            <div class="product-comment">
+                                                <img src="img/icon/author.png" alt="">
+                                                <div class="product-comment-content">
+                                                    <div class="product-reviews">
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </div>
+                                                    <p class="meta">
+                                                        <strong>admin</strong> - <span>November 22, 2016</span>
+                                                        <div class="description">
+                                                    <p>Good Product</p>
+                                                </div>
+                                            </div>
+                                </div>
+                                </li>
+                                </ul>
+                                <div class="review-form-wrapper">
+                                    <div class="review-form">
+                                        <span class="comment-reply-title">Add a review </span>
+                                        <form action="#">
+                                            <p class="comment-notes">
+                                                <span id="email-notes">Your email address will not be published.</span>
+                                                Required fields are marked
+                                                <span class="required">*</span>
+                                            </p>
+                                            <div class="comment-form-rating">
+                                                <label>Your rating</label>
+                                                <div class="rating">
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                    <i class="fa fa-star-o"></i>
+                                                </div>
+                                            </div>
+                                            <div class="input-element">
+                                                <div class="comment-form-comment">
+                                                    <label>Comment</label>
+                                                    <textarea name="message" cols="40" rows="8"></textarea>
+                                                </div>
+                                                <div class="review-comment-form-author">
+                                                    <label>Name </label>
+                                                    <input required="required" type="text">
+                                                </div>
+                                                <div class="review-comment-form-email">
+                                                    <label>Email </label>
+                                                    <input required="required" type="text">
+                                                </div>
+                                                <div class="comment-submit">
+                                                    <button type="submit" class="form-button">Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Review And Description Tab Content End-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Product Description Review Area Start-->
+<!--Also Like Product Start-->
+<div class="also-like-product">
+    <div class="container">
+        <div class="row">
+            <!--Section Title Start-->
+            <div class="col-12">
+                <div class="section-title text-center mb-35">
+                    <h3>猜你喜欢之餐桌</h3>
+                </div>
+            </div>
+            <!--Section Title End-->
+        </div>
+        <div class="row">
+            <div class="product-slider-active">
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                    <!--Single Product Start-->
+                    <div class="single-product mb-25">
+                        <div class="product-img img-full">
+                            <a href="single-product.html">
+                                <img src="img/product/canzhuo1.jpg" alt="">
+                            </a>
+                            <div class="product-action">
+                                <ul>
+                                    <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                    <li><a href="#" title="Whishlist"><i class="fa fa-heart-o"></i></a></li>
+                                    <li><a href="#" title="Compare"><i class="fa fa-refresh"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h2><a href="single-product.html">精品桌</a></h2>
+                            <div class="product-price">
+                                <div class="price-box">
+                                    <span class="regular-price">$115.00</span>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a href="#">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single Product End-->
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                    <!--Single Product Start-->
+                    <div class="single-product mb-25">
+                        <div class="product-img img-full">
+                            <a href="single-product.html">
+                                <img src="img/product/canzhuo3.JPG" alt="">
+                            </a>
+                            <div class="product-action">
+                                <ul>
+                                    <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                    <li><a href="#" title="Whishlist"><i class="fa fa-heart-o"></i></a></li>
+                                    <li><a href="#" title="Compare"><i class="fa fa-refresh"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h2><a href="single-product.html">高档桌</a></h2>
+                            <div class="product-price">
+                                <div class="price-box">
+                                    <span class="regular-price">$40.00</span>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a href="#">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single Product End-->
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                    <!--Single Product Start-->
+                    <div class="single-product mb-25">
+                        <div class="product-img img-full">
+                            <a href="single-product.html">
+                                <img src="img/product/canzhuo2.JPG" alt="">
+                            </a>
+                            <div class="product-action">
+                                <ul>
+                                    <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                    <li><a href="#" title="Whishlist"><i class="fa fa-heart-o"></i></a></li>
+                                    <li><a href="#" title="Compare"><i class="fa fa-refresh"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h2><a href="single-product.html">时尚桌</a></h2>
+                            <div class="product-price">
+                                <div class="price-box">
+                                    <span class="regular-price">$90.00</span>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a href="#">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single Product End-->
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                    <!--Single Product Start-->
+                    <div class="single-product mb-25">
+                        <div class="product-img img-full">
+                            <a href="single-product.html">
+                                <img src="img/product/chuang6.JPG" alt="">
+                            </a>
+                            <div class="product-action">
+                                <ul>
+                                    <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                    <li><a href="#" title="Whishlist"><i class="fa fa-heart-o"></i></a></li>
+                                    <li><a href="#" title="Compare"><i class="fa fa-refresh"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h2><a href="single-product.html">时尚床</a></h2>
+                            <div class="product-price">
+                                <div class="price-box">
+                                    <span class="regular-price">$70.00</span>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a href="#">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single Product End-->
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                    <!--Single Product Start-->
+                    <div class="single-product mb-25">
+                        <div class="product-img img-full">
+                            <a href="single-product.html">
+                                <img src="img/product/chuang2.JPG" alt="">
+                            </a>
+                            <div class="product-action">
+                                <ul>
+                                    <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                    <li><a href="#" title="Whishlist"><i class="fa fa-heart-o"></i></a></li>
+                                    <li><a href="#" title="Compare"><i class="fa fa-refresh"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h2><a href="single-product.html">2号床</a></h2>
+                            <div class="product-price">
+                                <div class="price-box">
+                                    <span class="regular-price">$100.00</span>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a href="#">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single Product End-->
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                    <!--Single Product Start-->
+                    <div class="single-product mb-25">
+                        <div class="product-img img-full">
+                            <a href="single-product.html">
+                                <img src="img/product/chuang4.JPG" alt="">
+                            </a>
+                            <div class="product-action">
+                                <ul>
+                                    <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                    <li><a href="#" title="Whishlist"><i class="fa fa-heart-o"></i></a></li>
+                                    <li><a href="#" title="Compare"><i class="fa fa-refresh"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h2><a href="single-product.html">高档床</a></h2>
+                            <div class="product-price">
+                                <div class="price-box">
+                                    <span class="regular-price">$90.00</span>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a href="#">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single Product End-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Also Like Product End-->
+<!--Related Product Start-->
+<div class="Related-product mt-105 mb-100">
+    <div class="container">
+        <div class="row">
+            <!--Section Title Start-->
+            <div class="col-12">
+                <div class="section-title text-center mb-35">
+                    <h3>猜你喜欢之沙发</h3>
+                </div>
+            </div>
+            <!--Section Title End-->
+        </div>
+        <div class="row">
+            <div class="product-slider-active">
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                    <!--Single Product Start-->
+                    <div class="single-product mb-25">
+                        <div class="product-img img-full">
+                            <a href="single-product.html">
+                                <img src="img/product/shafa1.JPG" alt="">
+                            </a>
+                            <div class="product-action">
+                                <ul>
+                                    <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                    <li><a href="#" title="Whishlist"><i class="fa fa-heart-o"></i></a></li>
+                                    <li><a href="#" title="Compare"><i class="fa fa-refresh"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h2><a href="single-product.html">精品皮沙发</a></h2>
+                            <div class="product-price">
+                                <div class="price-box">
+                                    <span class="regular-price">$70.00</span>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a href="#">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single Product End-->
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                    <!--Single Product Start-->
+                    <div class="single-product mb-25">
+                        <div class="product-img img-full">
+                            <a href="single-product.html">
+                                <img src="img/product/shafa2.JPG" alt="">
+                            </a>
+                            <div class="product-action">
+                                <ul>
+                                    <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                    <li><a href="#" title="Whishlist"><i class="fa fa-heart-o"></i></a></li>
+                                    <li><a href="#" title="Compare"><i class="fa fa-refresh"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h2><a href="single-product.html">优质沙发</a></h2>
+                            <div class="product-price">
+                                <div class="price-box">
+                                    <span class="regular-price">$100.00</span>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a href="#">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single Product End-->
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                    <!--Single Product Start-->
+                    <div class="single-product mb-25">
+                        <div class="product-img img-full">
+                            <a href="single-product.html">
+                                <img src="img/product/shafa3.JPG" alt="">
+                            </a>
+                            <div class="product-action">
+                                <ul>
+                                    <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                    <li><a href="#" title="Whishlist"><i class="fa fa-heart-o"></i></a></li>
+                                    <li><a href="#" title="Compare"><i class="fa fa-refresh"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h2><a href="single-product.html">头层牛皮沙发</a></h2>
+                            <div class="product-price">
+                                <div class="price-box">
+                                    <span class="regular-price">$90.00</span>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a href="#">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single Product End-->
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                    <!--Single Product Start-->
+                    <div class="single-product mb-25">
+                        <div class="product-img img-full">
+                            <a href="single-product.html">
+                                <img src="img/product/shafa4.JPG" alt="">
+                            </a>
+                            <div class="product-action">
+                                <ul>
+                                    <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                    <li><a href="#" title="Whishlist"><i class="fa fa-heart-o"></i></a></li>
+                                    <li><a href="#" title="Compare"><i class="fa fa-refresh"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h2><a href="single-product.html">苏格兰沙发</a></h2>
+                            <div class="product-price">
+                                <div class="price-box">
+                                    <span class="regular-price">$115.00</span>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a href="#">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single Product End-->
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                    <!--Single Product Start-->
+                    <div class="single-product mb-25">
+                        <div class="product-img img-full">
+                            <a href="single-product.html">
+                                <img src="img/product/shafa5.JPG" alt="">
+                            </a>
+                            <div class="product-action">
+                                <ul>
+                                    <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                    <li><a href="#" title="Whishlist"><i class="fa fa-heart-o"></i></a></li>
+                                    <li><a href="#" title="Compare"><i class="fa fa-refresh"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h2><a href="single-product.html">欧式沙发</a></h2>
+                            <div class="product-price">
+                                <div class="price-box">
+                                    <span class="regular-price">$40.00</span>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a href="#">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single Product End-->
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                    <!--Single Product Start-->
+                    <div class="single-product mb-25">
+                        <div class="product-img img-full">
+                            <a href="single-product.html">
+                                <img src="img/product/shafa6.JPG" alt="">
+                            </a>
+                            <div class="product-action">
+                                <ul>
+                                    <li><a href="#open-modal" data-toggle="modal" title="Quick view"><i class="fa fa-search"></i></a></li>
+                                    <li><a href="#" title="Whishlist"><i class="fa fa-heart-o"></i></a></li>
+                                    <li><a href="#" title="Compare"><i class="fa fa-refresh"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h2><a href="single-product.html">布艺沙发</a></h2>
+                            <div class="product-price">
+                                <div class="price-box">
+                                    <span class="regular-price">$90.00</span>
+                                </div>
+                                <div class="add-to-cart">
+                                    <a href="#">Add To Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Single Product End-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Related Product End-->
+<!--Brand Area Start-->
+
+<!--Brand Area End-->
+<!--Footer Area Start-->
+<footer>
+    <div class="footer-container">
+        <!--Footer Top Area Start-->
+        <div class="footer-top-area black-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <!--Single Footer Widget Start-->
+                        <div class="single-footer-widget mb-40">
+                            <div class="footer-title">
+                                <h3>我的账户</h3>
+                            </div>
+                            <ul class="link-widget">
+                                <li><a href="#">关于我们</a></li>
+                                <li><a href="#">团队成员</a></li>
+                                <li><a href="#">职业生涯</a></li>
+                                <li><a href="#">特价商品</a></li>
+                                <li><a href="shop.html">畅销书</a></li>
+                                <li><a href="#">我们的商店</a></li>
+                                <li><a href="#">联系我们</a></li>
+                            </ul>
+                        </div>
+                        <!--Single Footer Widget End-->
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <!--Single Footer Widget Start-->
+                        <div class="single-footer-widget mb-40">
+                            <div class="footer-title">
+                                <h3>问询处</h3>
+                            </div>
+                            <ul class="link-widget">
+                                <li><a href="#">关于我们</a></li>
+                                <li><a href="#">联系我们</a></li>
+                                <li><a href="#">我的命令</a></li>
+                                <li><a href="#">条款与条件</a></li>
+                                <li><a href="#">收益与交换</a></li>
+                                <li><a href="#">船运</a></li>
+                                <li><a href="#">隐私政策</a></li>
+                            </ul>
+                        </div>
+                        <!--Single Footer Widget End-->
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <!--Single Footer Widget Start-->
+                        <div class="single-footer-widget mb-40">
+                            <div class="footer-title">
+                                <h3>快速链接</h3>
+                            </div>
+                            <ul class="link-widget">
+                                <li><a href="#">支援中心</a></li>
+                                <li><a href="#">条款与条件</a></li>
+                                <li><a href="#">船运</a></li>
+                                <li><a href="#">隐私政策</a></li>
+                                <li><a href="#">帮助</a></li>
+                                <li><a href="#">产品退货</a></li>
+                                <li><a href="#">常见问题解答</a></li>
+                            </ul>
+                        </div>
+                        <!--Single Footer Widget End-->
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <!--Single Footer Widget Start-->
+                        <div class="single-footer-widget mb-40">
+                            <div class="footer-title">
+                                <h3>类别</h3>
+                            </div>
+                            <ul class="link-widget">
+                                <li><a href="#">卧室</a></li>
+                                <li><a href="#">家具</a></li>
+                                <li><a href="#">客堂</a></li>
+                                <li><a href="#">手机及平板电脑</a></li>
+                                <li><a href="#">男人</a></li>
+                                <li><a href="#">女人</a></li>
+                                <li><a href="#">配件</a></li>
+                            </ul>
+                        </div>
+                        <!--Single Footer Widget End-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer Top Area End-->
+        <!--Footer Middle Area Start-->
+        <div class="footer-middle-area black-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <!--Single Footer Widget Start-->
+                        <div class="single-footer-widget mb-30">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="img/logo/zslogo5.png" alt=""></a>
+                            </div>
+                        </div>
+                        <!--Single Footer Widget End-->
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <!--Single Footer Widget Start-->
+                        <div class="single-footer-widget mb-30">
+                            <div class="footer-info">
+                                <div class="icon">
+                                    <i class="fa fa-home"></i>
+                                </div>
+                                <p>Address : No 40 Baria Sreet 15/2 NewYork City, NY, United States.</p>
+                            </div>
+                        </div>
+                        <!--Single Footer Widget End-->
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <!--Single Footer Widget Start-->
+                        <div class="single-footer-widget mb-30">
+                            <div class="footer-info">
+                                <div class="icon">
+                                    <i class="fa fa-envelope-open-o"></i>
+                                </div>
+                                <p>Email: <br>info@yourmail.com</p>
+                            </div>
+                        </div>
+                        <!--Single Footer Widget End-->
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <!--Single Footer Widget Start-->
+                        <div class="single-footer-widget mb-30">
+                            <div class="footer-info">
+                                <div class="icon">
+                                    <i class="fa fa-mobile"></i>
+                                </div>
+                                <p>Phone: <br>(+68) 123 456 7890</p>
+                            </div>
+                        </div>
+                        <!--Single Footer Widget End-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer Middle Area End-->
+        <!--Footer Bottom Area Start-->
+        <div class="footer-bottom-area black-bg pt-50 pb-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!--Footer Payment Start-->
+                        <div class="footer-payments-image">
+                            <img src="img/payment/payment-icon.png" alt="">
+                        </div>
+                        <!--Footer Payment End-->
+                        <!--Footer Menu Start-->
+                        <div class="footer-menu text-center">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Site Map</a></li>
+                                    <li><a href="#">Search Terms</a></li>
+                                    <li><a href="#">Advanced Search</a></li>
+                                    <li><a href="#">Orders and Returns</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!--Footer Menu End-->
+                        <!--Footer Copyright Start-->
+                        <div class="footer-copyright">
+                            <p>Copyright &copy; 2018.Company name All rights reserved.<a target="_blank" href="http://www.aspku.com/moban/"></a></p>
+                        </div>
+                        <!--Footer Copyright End-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer Bottom Area End-->
+    </div>
+</footer>
+<!--Footer Area End-->
+<!-- Modal Area Strat -->
+<div class="modal fade" id="open-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!--Modal Img-->
+                    <div class="col-md-5">
+                        <!--Modal Tab Content Start-->
+                        <div class="tab-content product-details-large" id="myTabContent">
+                            <div class="tab-pane fade show active" id="single-slide1" role="tabpanel" aria-labelledby="single-slide-tab-1">
+                                <!--Single Product Image Start-->
+                                <div class="single-product-img img-full">
+                                    <img src="img/single-product/large/single-product1.jpg" alt="">
+                                </div>
+                                <!--Single Product Image End-->
+                            </div>
+                            <div class="tab-pane fade" id="single-slide2" role="tabpanel" aria-labelledby="single-slide-tab-2">
+                                <!--Single Product Image Start-->
+                                <div class="single-product-img img-full">
+                                    <img src="img/single-product/large/single-product2.jpg" alt="">
+                                </div>
+                                <!--Single Product Image End-->
+                            </div>
+                            <div class="tab-pane fade" id="single-slide3" role="tabpanel" aria-labelledby="single-slide-tab-3">
+                                <!--Single Product Image Start-->
+                                <div class="single-product-img img-full">
+                                    <img src="img/single-product/large/single-product3.jpg" alt="">
+                                </div>
+                                <!--Single Product Image End-->
+                            </div>
+                            <div class="tab-pane fade" id="single-slide4" role="tabpanel" aria-labelledby="single-slide-tab-4">
+                                <!--Single Product Image Start-->
+                                <div class="single-product-img img-full">
+                                    <img src="img/single-product/large/single-product4.jpg" alt="">
+                                </div>
+                                <!--Single Product Image End-->
+                            </div>
+                            <div class="tab-pane fade" id="single-slide5" role="tabpanel" aria-labelledby="single-slide-tab-4">
+                                <!--Single Product Image Start-->
+                                <div class="single-product-img img-full">
+                                    <img src="img/single-product/large/single-product5.jpg" alt="">
+                                </div>
+                                <!--Single Product Image End-->
+                            </div>
+                            <div class="tab-pane fade" id="single-slide6" role="tabpanel" aria-labelledby="single-slide-tab-4">
+                                <!--Single Product Image Start-->
+                                <div class="single-product-img img-full">
+                                    <img src="img/single-product/large/single-product6.jpg" alt="">
+                                </div>
+                                <!--Single Product Image End-->
+                            </div>
+                        </div>
+                        <!--Modal Content End-->
+                        <!--Modal Tab Menu Start-->
+                        <div class="single-product-menu">
+                            <div class="nav single-slide-menu owl-carousel" role="tablist">
+                                <div class="single-tab-menu img-full">
+                                    <a class="active" data-toggle="tab" id="single-slide-tab-1" href="#single-slide1"><img src="img/single-product/small/single-product1.jpg" alt=""></a>
+                                </div>
+                                <div class="single-tab-menu img-full">
+                                    <a data-toggle="tab" id="single-slide-tab-2" href="#single-slide2"><img src="img/single-product/small/single-product2.jpg" alt=""></a>
+                                </div>
+                                <div class="single-tab-menu img-full">
+                                    <a data-toggle="tab" id="single-slide-tab-3" href="#single-slide3"><img src="img/single-product/small/single-product3.jpg" alt=""></a>
+                                </div>
+                                <div class="single-tab-menu img-full">
+                                    <a data-toggle="tab" id="single-slide-tab-4" href="#single-slide4"><img src="img/single-product/small/single-product4.jpg" alt=""></a>
+                                </div>
+                                <div class="single-tab-menu img-full">
+                                    <a data-toggle="tab" id="single-slide-tab-5" href="#single-slide5"><img src="img/single-product/small/single-product5.jpg" alt=""></a>
+                                </div>
+                                <div class="single-tab-menu img-full">
+                                    <a data-toggle="tab" id="single-slide-tab-6" href="#single-slide6"><img src="img/single-product/small/single-product6.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Modal Tab Menu End-->
+                    </div>
+                    <!--Modal Img-->
+                    <!--Modal Content-->
+                    <div class="col-md-7">
+                        <div class="modal-product-info">
+                            <h1>Sit voluptatem</h1>
+                            <div class="modal-product-price">
+                                <span class="old-price">$74.00</span>
+                                <span class="new-price">$69.00</span>
+                            </div>
+                            <a href="single-product.html" class="see-all">See all features</a>
+                            <div class="add-to-cart quantity">
+                                <form class="add-quantity" action="#">
+                                    <div class="modal-quantity">
+                                        <input type="number" value="1">
+                                    </div>
+                                    <div class="add-to-link">
+                                        <button class="form-button" data-text="add to cart">add to cart</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="cart-description">
+                                <p>时尚真皮床欧式田园风格，它能让我们享受到*皇族卧室的华丽的待遇。时尚真皮床采用经典的描金装饰，精致而富有文化韵味，它采用头层真皮打造，触感柔软舒适，能让我们睡在上面时更加放松，睡眠质量也能得到提高。真皮床的床头床位使用了对称式雕花设计，具有一种恢弘的气势，能为我们打造出贵族般的优雅与奢华。
+                                    时尚真皮床美式风格。使用这样的时尚真皮床能够让我们享受优越的美式生活，感受君临天下的气势与王者风范，睡觉也成了一种享受。时尚真皮床的雕刻精美，造型优雅，它的皮质能让我们感觉到更加舒适的质感，享受更好的睡眠生活。</p>
+                            </div>
+                            <div class="social-share">
+                                <h3>Share this product</h3>
+                                <ul class="socil-icon2">
+                                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                    <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Modal Content-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Area End -->
+</div>
+
+
+
+
+
+<!--All Js Here-->
+
+<!--Jquery 1.12.4-->
+<script src="js/vendor/jquery-1.12.4.min.js"></script>
+<!--Popper-->
+<script src="js/popper.min.js"></script>
+<!--Bootstrap-->
+<script src="js/bootstrap.min.js"></script>
+<!--Imagesloaded-->
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<!--Isotope-->
+<script src="js/isotope.pkgd.min.js"></script>
+<!--Waypoints-->
+<script src="js/waypoints.min.js"></script>
+<!--Counterup-->
+<script src="js/jquery.counterup.min.js"></script>
+<!--Carousel-->
+<script src="js/owl.carousel.min.js"></script>
+<!--Slick-->
+<script src="js/slick.min.js"></script>
+<!--Meanmenu-->
+<script src="js/jquery.meanmenu.min.js"></script>
+<!--Easyzoom-->
+<script src="js/easyzoom.min.js"></script>
+<!--Nice Select-->
+<script src="js/jquery.nice-select.min.js"></script>
+<!--ScrollUp-->
+<script src="js/jquery.scrollUp.min.js"></script>
+<!--Wow-->
+<script src="js/wow.min.js"></script>
+<!--Venobox-->
+<script src="js/venobox.min.js"></script>
+<!--Jquery Ui-->
+<script src="js/jquery-ui.js"></script>
+<!--Countdown-->
+<script src="js/jquery.countdown.min.js"></script>
+<!--Plugins-->
+<script src="js/plugins.js"></script>
+<!--Main Js-->
+<script src="js/main.js"></script>
+<script src="js3/jquery-1.11.1.min.js"></script>
+<script>
+    var show=function(){
+        if(sessionStorage.getItem("customerName")!=null){
+            var li01=$("<li><a href='dl.html'>用户_"+sessionStorage.getItem("customerName")+"</a></li>");
+            $(".main-menu li:last").remove();
+            $(".main-menu").append(li01);
+        }
+    }
+    show();
+
+    var list = function() {
+        $.get("http://localhost:8080/goods/queryShopping/",{"customerName":sessionStorage.getItem("customerName"),"shoppingBoolean":-1}).done(function(data){
+            if(data.code==1){
+                $("#div02").html("");
+                $.each(data.data,function (index,obj) {
+                    if(obj.shoppingBoolean==0){
+                        var input01=$("<input type='checkbox'class='gg gg"+index+"'\>");
+                    }else if(obj.shoppingBoolean==1){
+                        var input01=$("<input type='checkbox' value='"+obj.goodsonPrice*obj.shoppingNumber+"' class='gg gg"+index+"' checked \>");
+                    }
+                    var ll=$("           <img src=\"img/product/"+obj.goodsonImg+"\"  />\n" +
+                        "                <span class='span00'>"+obj.goodsName+"["+obj.goodsonName+"]</span>\n" +
+                        "                <span class=\"span01\">"+obj.goodsonPrice+"元</span>\n" +
+                        "                <button class=\"button01\" id='button01"+index+"'>-</button>\n" +
+                        "                <input type=\"text\" id='input01"+index+"' value='"+obj.shoppingNumber+"' />\n" +
+                        "                <button class=\"button01\" id='button11"+index+"'>+</button>\n" +
+                        "                <span class=\"span02\">"+obj.goodsonPrice*obj.shoppingNumber+"元</span>\n" +
+                        "                <button class=\"button02 button"+obj.shoppingId+"\">×</button>");
+                   var div01=$("<div class=\"div02-div01\"><div>\n" +
+                       // "                <input type=\"checkbox\" class=\"gg\">\n" +
+                       // "                <img src=\"img/product/"+obj.goodsonImg+"\"  />\n" +
+                       // "                <span class='span00'>"+obj.goodsName+"["+obj.goodsonName+"]</span>\n" +
+                       // "                <span class=\"span01\">"+obj.goodsonPrice+"元</span>\n" +
+                       // "                <button class=\"button01\">-</button>\n" +
+                       // "                <input type=\"text\" value='"+obj.shoppingNumber+"' />\n" +
+                       // "                <button class=\"button01\">+</button>\n" +
+                       // "                <span class=\"span02\">"+obj.goodsonPrice*obj.shoppingNumber+"元</span>\n" +
+                       // "                <button class=\"button02 button"+obj.shoppingId+"\">×</button>\n" +
+                       "            </div></div>");
+                   div01.append(input01);
+                   div01.append(ll);
+                    // $.each($(".gg:checkbox:checked"),function(){
+                    //     alert("hh");
+                    // });
+                   $("#div02").append(div01);
+                    if(index==data.data.length-1){
+                        var amount02=0;
+                        $("#div03 .em01").html(data.data.length);
+                        $("#div03 .em02").html($(".gg[type='checkbox']:checked").length);
+                        $.each($(".gg:checkbox:checked"),function(){
+                            amount02+=Number($(this).val());
+                            $("#div03 .em03").html(amount02);
+                        });
+                    }
+                    $("#button01"+index).click(function () {
+                        var val01= $("#input01"+index).val();
+                        if ($(".gg"+index).get(0).checked) {
+                            $.get("http://localhost:8080/goods/queryShoppingUpdate/", {
+                                "shoppingId": obj.shoppingId,
+                                "shoppingNumber": val01 - 1,
+                                "shoppingBoolean": 1
+                            }).done(function (data) {
+                                list();
+                            }).fail(function (xhr, status, errorThrown) {
+                                alert("xhr：" + xhr + "，status：" + status + "，errorThrown：" + errorThrown);
+                            }).always(function (data, textStatus) {
+                                console.log("ajax执行完成，完成状态：" + textStatus);
+                            });
+                        }else {
+                            $.get("http://localhost:8080/goods/queryShoppingUpdate/", {
+                                "shoppingId": obj.shoppingId,
+                                "shoppingNumber": val01 - 1,
+                                "shoppingBoolean": 0
+                            }).done(function (data) {
+                                list();
+                            }).fail(function (xhr, status, errorThrown) {
+                                alert("xhr：" + xhr + "，status：" + status + "，errorThrown：" + errorThrown);
+                            }).always(function (data, textStatus) {
+                                console.log("ajax执行完成，完成状态：" + textStatus);
+                            });
+                        }
+                    });
+                    $("#button11"+index).click(function () {
+                        var val01= $("#input01"+index).val();
+                        if ($(".gg"+index).get(0).checked) {
+                            $.get("http://localhost:8080/goods/queryShoppingUpdate/", {
+                                "shoppingId": obj.shoppingId,
+                                "shoppingNumber": ++val01,
+                                "shoppingBoolean": 1
+                            }).done(function (data) {
+                                list();
+                            }).fail(function (xhr, status, errorThrown) {
+                                alert("xhr：" + xhr + "，status：" + status + "，errorThrown：" + errorThrown);
+                            }).always(function (data, textStatus) {
+                                console.log("ajax执行完成，完成状态：" + textStatus);
+                            });
+                        }else{
+                            $.get("http://localhost:8080/goods/queryShoppingUpdate/", {
+                                "shoppingId": obj.shoppingId,
+                                "shoppingNumber": ++val01,
+                                "shoppingBoolean": 0
+                            }).done(function (data) {
+                                list();
+                            }).fail(function (xhr, status, errorThrown) {
+                                alert("xhr：" + xhr + "，status：" + status + "，errorThrown：" + errorThrown);
+                            }).always(function (data, textStatus) {
+                                console.log("ajax执行完成，完成状态：" + textStatus);
+                            });
+                        }
+                    });
+                    $(".gg"+index).click({checked:true},function(){
+                        $("#div03 .em01").html(data.data.length);
+                        $("#div03 .em02").html($(".gg[type='checkbox']:checked").length);
+                        var amount=0;
+                        $(this).val(obj.goodsonPrice*obj.shoppingNumber);
+                        $.each($(".gg:checkbox:checked"),function(){
+                            amount+=Number($(this).val());
+                            $("#div03 .em03").html(amount);
+                        });
+                        if(amount==0){
+                            $("#div03 .em03").html(amount);
+                        }
+                        if ($(this).get(0).checked) {
+                            $.get("http://localhost:8080/goods/queryShoppingUpdate/",{"shoppingId":obj.shoppingId,"shoppingNumber":obj.shoppingNumber,"shoppingBoolean":1}).done(function(data){
+                            }).fail(function(xhr, status, errorThrown){
+                                alert("xhr："+xhr+"，status："+status+"，errorThrown："+errorThrown);
+                            }).always(function(data, textStatus){
+                                console.log("ajax执行完成，完成状态："+textStatus);
+                            });
+                        }else{
+                            $.get("http://localhost:8080/goods/queryShoppingUpdate/",{"shoppingId":obj.shoppingId,"shoppingNumber":obj.shoppingNumber,"shoppingBoolean":0}).done(function(data){
+                            }).fail(function(xhr, status, errorThrown){
+                                alert("xhr："+xhr+"，status："+status+"，errorThrown："+errorThrown);
+                            }).always(function(data, textStatus){
+                                console.log("ajax执行完成，完成状态："+textStatus);
+                            });
+                        }
+
+                    });
+                   $(".button"+obj.shoppingId).click(function () {
+                       if(confirm("确认移除该商品吗？")) {
+                           $.get("http://localhost:8080/goods/queryShoppingDelete/",{"shoppingId":obj.shoppingId}).done(function(data){
+                               list();
+                           }).fail(function(xhr, status, errorThrown){
+                               alert("xhr："+xhr+"，status："+status+"，errorThrown："+errorThrown);
+                           }).always(function(data, textStatus){
+                               console.log("ajax执行完成，完成状态："+textStatus);
+                           });
+                       }
+                   });
+                })
+            }
+        }).fail(function(xhr, status, errorThrown){
+            alert("xhr："+xhr+"，status："+status+"，errorThrown："+errorThrown);
+        }).always(function(data, textStatus){
+            console.log("ajax执行完成，完成状态："+textStatus);
+        });
+    }
+    list();
+
+</script>
+</body>
+</html>
+

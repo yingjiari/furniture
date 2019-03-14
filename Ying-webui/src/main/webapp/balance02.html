@@ -1,0 +1,340 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>填写订单信息</title>
+	<meta name="description" content="">
+	<meta name="robots" content="noindex, follow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex, follow" />
+    <!--All Css Here-->
+    
+    <!-- Bootstrap CSS-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Linearicon CSS-->
+    <link rel="stylesheet" href="css/linearicons.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- Animate CSS-->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Owl Carousel CSS-->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<!-- Slick CSS-->
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- Meanmenu CSS-->
+	<link rel="stylesheet" href="css/meanmenu.min.css">
+	<!-- Easyzoom CSS-->
+	<link rel="stylesheet" href="css/easyzoom.css">
+	<!-- Venobox CSS-->
+	<link rel="stylesheet" href="css/venobox.css">
+	<!-- Jquery Ui CSS-->
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<!-- Nice Select CSS-->
+	<link rel="stylesheet" href="css/nice-select.css">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- Modernizr Js -->
+	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <style>
+		#zb{width:1000px;height:600px;background-color: #f5f5f5;margin: 20px auto;border-top:1px solid #f5f5f5}
+		#div01,#div03{width:1000px;height:100px;border-bottom: 2px solid white;}
+		#div03{font-size: 22px;padding-left: 40px;height: 80px;width:1000px ;line-height: 70px;border-top: 2px solid white;}
+		.p01{font-size: 26px;margin-left: 40px;margin-top: 30px;}
+		.p02{margin-left: 40px;}
+		.p02 span{color: red;}
+		.li01{color:red;}
+		#div02 li{
+			list-style-type:none;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			margin-left: 50px;
+			font-size: 16px;
+		}
+		#div04 li{margin-left:50px;margin-top:20px;list-style-type: none;width:174px;height: 60px;border: 1px solid #e0e0e0;float: left;margin-right: 10px;}
+		#div04 li:hover{border: 1px solid red;cursor: pointer;}
+		#div04 img{width:172px;height: 58px;}
+    </style>
+</head>
+<body>
+
+
+
+	<!--[if lt IE 8]>
+	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+
+	<div class="wrapper">
+		<!--Header Area Start-->
+		<header>
+		    <div class="header-container">
+		        <div class="header-area header-sticky pt-30 pb-30">
+                    <div class="container">
+                        <div class="row">
+                            <!--Header Logo Start-->
+                            <div class="col-lg-3 col-md-3">
+                                <div class="logo-area">
+                                    <a href="index.html">
+                                        <img src="img/logo/zslogo5.png" alt="" style="background-size:50% 50%;width:146px;height:68px;">
+                                    </a>
+                                </div>
+                            </div>
+                            <!--Header Logo End-->
+                            <!--Header Menu And Mini Cart Start-->
+                            <div class="col-lg-9 col-md-9 text-lg-right">
+                                <!--Main Menu Area Start-->
+                                <div class="header-menu">
+                                    <nav>
+                                        <ul class="main-menu">
+                                            <li><a href="classify01.html">家</a></li>
+                                            <li><a href="shop.html">店</a></li>
+                                            <li><a href="dl.html">登录</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!--Main Menu Area End-->
+                                <!--Header Option Start--> 
+                                <div class="header-option">
+                                    <div class="mini-cart-search">
+                                        <div class="mini-cart">
+                                            <a href="single-product02.html">
+                                               <span class="cart-icon">
+                                                   
+                                                </span>
+                                                <span class="cart-title"><a href="single-product02.html">购物车 <br><strong></strong></span>
+                                            </a>
+                                           <!--Cart Dropdown Start-->
+                                          
+                                           <!--Cart Dropdown End--> 
+                                        </div>
+                                        <div class="header-search">
+                                            <div class="search-box">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                                <div class="search-dropdown">
+                                                    <form action="#">
+                                                        <input name="search" id="search" placeholder="" value="Search product..." onblur="if(this.value==''){this.value='Search product...'}" onfocus="if(this.value=='Search product...'){this.value=''}" type="text">
+                                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="currency">
+                                            <div class="currency-box">
+                                                <a href="#"><i class="fa fa-th"></i></a>
+                                                <div class="currency-dropdown">
+                                                    <ul class="menu-top-menu">
+                                                        <li><a href="#">我的购物车</a></li>
+                                                        <li><a href="#">已买到的宝贝</a></li>
+                                                        <li><a href="#">我的收藏</a></li>
+                                                        <li><a href="#">评价管理</a></li>
+                                                        <li><a href="#">我的足迹</a></li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Header Option End--> 
+                            </div>
+                            <!--Header Menu And Mini Cart End-->
+                        </div>
+                        <div class="row">
+                            <div class="col-12"> 
+                                <!--Mobile Menu Area Start-->
+                                <div class="mobile-menu d-lg-none"></div>
+                                <!--Mobile Menu Area End-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+		    </div>
+		</header>
+
+		<div id="zb">
+			<div id="div01">
+				<p class="p01">订单提交成功！去付款咯~</p>
+				<p class="p02">请在<span>24小时</span>内完成支付，超时后取消订单</p>
+			</div>
+			<div id="div02">
+				<ul>
+					<!--<li class="li01">-->
+						<!--订单号:<span>535352454534523</span>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--收货信息:<span>家日 130****2212  广东  珠海市  斗门区  白蕉镇  珠海市斗门区白蕉镇白蕉南路29号南方IT培训学院 </span>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--商品名称:<span>小米8 青春 全网通版 6GB内存 梦幻蓝 64GB</span>-->
+					<!--</li>-->
+					<!--<li class="li01">-->
+						<!--商品总价:<span>35065元</span>-->
+					<!--</li>-->
+					<!--<li>-->
+						<!--发票信息:<span>电子发票  个人</span>-->
+					<!--</li>-->
+				</ul>
+			</div>
+			<div id="div03">
+				选择以下支付方式付款
+			</div>
+			<div id="div04">
+				<ul>
+					<li id="libtn01"><img src="img/logo/weixinpay.png" /></li>
+					<li><img src="img/logo/payOnline_zfb.png" /></li>
+					<li><img src="img/logo/unionpay.png" /></li>
+				</ul>
+			</div>
+			<div id="div05">
+			</div>
+		</div>
+
+		<footer>
+		    <div class="footer-container">
+		        <!--Footer Top Area Start-->
+		        <div class="footer-top-area black-bg">
+		            <div class="container">
+		                <div class="row">
+		                    <div class="col-lg-3 col-md-6">
+		                        <!--Single Footer Widget Start-->
+		                        <div class="single-footer-widget mb-40">
+		                            <div class="footer-title">
+		                                <h3>我的账户</h3>
+		                            </div>
+		                            <ul class="link-widget">
+		                                <li><a href="#">关于我们</a></li>
+		                                <li><a href="#">团队成员</a></li>
+		                                <li><a href="#">职业生涯</a></li>
+		                                <li><a href="#">特价商品</a></li>
+		                                <li><a href="shop.html">畅销书</a></li>
+		                                <li><a href="#">我们的商店</a></li>
+		                                <li><a href="#">联系我们</a></li>
+		                            </ul>
+		                        </div>
+		                        <!--Single Footer Widget End-->
+		                    </div>
+		                    <div class="col-lg-3 col-md-6">
+		                        <!--Single Footer Widget Start-->
+		                        <div class="single-footer-widget mb-40">
+		                            <div class="footer-title">
+		                                <h3>问询处</h3>
+		                            </div>
+		                            <ul class="link-widget">
+		                                <li><a href="#">关于我们</a></li>
+		                                <li><a href="#">联系我们</a></li>
+		                                <li><a href="#">我的命令</a></li>
+		                                <li><a href="#">条款与条件</a></li>
+		                                <li><a href="#">收益与交换</a></li>
+		                                <li><a href="#">船运</a></li>
+		                                <li><a href="#">隐私政策</a></li>
+		                            </ul>
+		                        </div>
+		                        <!--Single Footer Widget End-->
+		                    </div>
+		                    <div class="col-lg-3 col-md-6">
+		                        <!--Single Footer Widget Start-->
+		                        <div class="single-footer-widget mb-40">
+		                            <div class="footer-title">
+		                                <h3>快速链接</h3>
+		                            </div>
+		                            <ul class="link-widget">
+		                                <li><a href="#">支援中心</a></li>
+		                                <li><a href="#">条款与条件</a></li>
+		                                <li><a href="#">船运</a></li>
+		                                <li><a href="#">隐私政策</a></li>
+		                                <li><a href="#">帮助</a></li>
+		                                <li><a href="#">产品退货</a></li>
+		                                <li><a href="#">常见问题解答</a></li>
+		                            </ul>
+		                        </div>
+		                        <!--Single Footer Widget End-->
+		                    </div>
+		                    <div class="col-lg-3 col-md-6">
+		                        <!--Single Footer Widget Start-->
+		                        <div class="single-footer-widget mb-40">
+		                            <div class="footer-title">
+		                                <h3>类别</h3>
+		                            </div>
+		                            <ul class="link-widget">
+		                                <li><a href="#">卧室</a></li>
+		                                <li><a href="#">家具</a></li>
+		                                <li><a href="#">客堂</a></li>
+		                                <li><a href="#">手机及平板电脑</a></li>
+		                                <li><a href="#">男人</a></li>
+		                                <li><a href="#">女人</a></li>
+		                                <li><a href="#">配件</a></li>
+		                            </ul>
+		                        </div>
+		                        <!--Single Footer Widget End-->
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		        <!--Footer Top Area End-->
+		        <!--Footer Middle Area Start-->
+            </div>
+		</footer>
+	</div>
+</body>
+<script src="js3/jquery-1.11.1.min.js"></script>
+<script>
+	var show=function(){
+	    if(sessionStorage.getItem("customerName")!=null){
+            var li01=$("<li><a href='dl.html'>用户_"+sessionStorage.getItem("customerName")+"</a></li>");
+            $(".main-menu li:last").remove();
+            $(".main-menu").append(li01);
+		}
+	}
+	show();
+
+    var list=function () {
+        var con= window.location.search
+        var zvalue = decodeURI(con.substring(con.indexOf("=")+1));
+        var orderId01="";
+        $.get("http://localhost:8080/goods/queryOrders/",{"customerName":sessionStorage.getItem("customerName"),"siteBoolean":1,"orderId":zvalue}).done(function(data){
+            if(data.code==1){
+                $.each(data.data,function (index,obj) {
+                    orderId01=obj.orderId;
+					var li01=$("<li class=\"li01\">\n" +
+                        "\t\t\t\t\t\t订单号:<span>"+obj.orderId+"</span>\n" +
+                        "\t\t\t\t\t</li>\n" +
+                        "\t\t\t\t\t<li>\n" +
+                        // "\t\t\t\t\t\t收货信息:<span>"+obj.siteSave+"&nbsp"+obj.siteCity+"&nbsp"+obj.siteDistrict+"&nbsp"+obj.siteTown+"</span>\n" +
+                        "\t\t\t\t\t\t收货信息:<span>"+obj.siteDetails+"</span>\n" +
+                        "\t\t\t\t\t</li>\n" +
+                        "\t\t\t\t\t<li>\n" +
+                        "\t\t\t\t\t\t商品名称:<span>"+obj.orderGoods+"</span>\n" +
+                        "\t\t\t\t\t</li>\n" +
+                        "\t\t\t\t\t<li class=\"li01\">\n" +
+                        "\t\t\t\t\t\t商品总价:<span>"+obj.orderPrice+"元</span>\n" +
+                        "\t\t\t\t\t</li>\n" +
+                        "\t\t\t\t\t<li>\n" +
+                        "\t\t\t\t\t\t发票信息:<span>电子发票  个人</span>\n" +
+                        "\t\t\t\t\t</li>");
+					$("#div02 ul").append(li01);
+                })
+            }
+        }).fail(function(xhr, status, errorThrown){
+            alert("xhr："+xhr+"，status："+status+"，errorThrown："+errorThrown);
+        }).always(function(data, textStatus){
+            $("#libtn01").click(function () {
+                $.get("http://localhost:8080/goods/queryorderBooleanUpdate",{"orderId":orderId01,"orderBoolean":1}).done(function(data){
+					alert("下单成功");
+                    window.location.href = "personal.html";
+                }).fail(function(xhr, status, errorThrown){
+                    alert("xhr："+xhr+"，status："+status+"，errorThrown："+errorThrown);
+                }).always(function(data, textStatus){
+                    console.log("ajax执行完成，完成状态："+textStatus);
+                });
+            });
+            console.log("ajax执行完成，完成状态："+textStatus);
+        });
+    }
+	list();
+</script>
+</html>
+

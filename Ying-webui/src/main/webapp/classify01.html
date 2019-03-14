@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>搜索</title>
+</head>
+<style>
+    body{
+        background-color: #F4F4F4;
+    }
+    #overall{
+        width: 1320px;
+        margin: 0 auto;
+    }
+    #header{
+        margin: 0 auto;
+        width: 105%;
+        height: 120px;
+        margin-bottom: -16px;
+        margin-top: -10px;
+        margin: -10px 0 -16px -20px;
+        background-color: white;
+        display: 0px;
+
+    }
+    .header-wrapper{
+        float: left;
+    }
+    .header-h1,.header-h2{
+        float: left;
+    }
+    .logo{
+        width: 146px;
+        height: 68px;
+        background-image: url(img/logo/zslogo5.png);
+        /*放图片重叠*/
+        background-repeat: no-repeat;
+        margin: 25px 0 0 90px;
+
+        display: block;
+        /*清除浮动*/
+        /*overflow: hidden;*/
+    }
+    .form1{
+        width: 400px;
+        height: 40px;
+        margin: 30px 0 0 260px;
+        border: 1px solid #d1d1d1;
+        transition: all .2s linear;
+    }
+    .form1:hover{
+        box-shadow: 0 5px 3px rgba(0,0,0,0.15);
+    }
+    .span1{
+        width: 360px;
+        height: 40px;
+    }
+    .input1{
+        width:340px ;
+        margin: 11px 0px 0 15px;
+        outline:none;
+        border:none;
+        cursor: pointer;
+    }
+    .a1{
+        width: 39px;
+        height: 40px;
+        text-align:center;
+        line-height: 40px;
+        float: right;
+        margin-bottom: 12px;
+        border-left: 1px solid #d1d1d1;
+        background-color:#EAEAEA;
+        cursor: pointer;
+    }
+    .header-h2-div{
+        width: 400px;
+        height: 30px;
+        margin: 10px 0 0px 270px;
+        cursor: pointer;
+    }
+    .aa01,.aa02,.aa03{
+        float: left;
+        margin: 0 0 0 10px;
+        font-size: 14px;
+    }
+    .aa01{color: #84AD32;}
+    .aa02{color: #FF0000;}
+    #div2{
+        width: 105%;
+        height: 50px;
+        margin-left: -20px;
+        background-color: #95B84E;
+    }
+    #div2-div{
+        margin: 0 50px;
+    }
+    #div2 li{
+        float: left;
+        height: 50px;
+        width: 100px;
+        list-style-type:none;
+        text-align:center;
+        line-height: 50px;
+        background-color: #95B84E;
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+    }
+    #div2 li:hover{
+        background-color: #B5CD86;
+    }
+    #div3{
+        width: 90%;
+        height: 160px;
+        margin: 20px auto 20px auto;
+        background-color: brown;
+    }
+    #div4{
+        margin-left:6px ;
+    }
+    #div4 li{
+        width: 282px;
+        height: 300px;
+        float: left;
+        margin: 0 0 20px 20px;
+        list-style-type:none;
+        background-color: #FFFFFF;
+        cursor: pointer;
+        border-radius:5px;
+    }
+    #div4 li:hover{
+        box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    }
+    .thumb img{
+        width: 282px;
+        height: 180px;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+    }
+
+    .title2 a{
+        font-size: 16px;
+        color: #000000;
+        text-decoration:none;
+        text-align: center;
+        display: block;
+        margin-top: -10px;
+    }
+    #div4 span{
+        font-size: 14px;
+        color: #95B84E;
+    }
+    #span0{margin-left:20px ;}
+    .button01{
+        width: 180px;
+        height: 30px;
+        background-color:#95B84E ;
+        border: 0;
+        border-radius: 2px;
+        font-size: 18px;
+        border: 1px solid white;
+        font-family:"宋体";
+        font-weight:600;
+        margin: 0 50px;
+        color: #FFFFFF;
+        border-radius:5px;
+        cursor: pointer;
+    }
+</style>
+<body>
+<div id="overall">
+    <div id="header">
+        <div class="header-wrapper">
+            <div class="header-h1">
+                <a href="classify.html" class="logo"></a>
+            </div>
+            <div class="header-h2">
+                <form class="form1">
+							<span id="span1">
+								<input id="goodsName" class="input1" placeholder="输入商品关键字"/>
+							</span>
+                    <a class="a1" id="btn"></a>
+                </form>
+                <div class="header-h2-div">
+                    <a class="aa01">精品沙发</a>
+                    <a class="aa01">实木床</a>
+                    <a class="aa02">橡木餐桌</a>
+                    <a class="aa01">配件</a>
+                    <a class="aa01">欧式茶几</a>
+                    <a class="aa03">熊猫鞋柜</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="div2">
+        <div id="div2-div">
+            <ul>
+                <li>精品推荐</li>
+                <li>办公家具</li>
+                <li>客厅家具</li>
+                <li>书房家具</li>
+                <li>卧室家具</li>
+                <li>儿童家具</li>
+                <li>厨卫家具</li>
+                <li>沙发专区</li>
+                <li>餐桌专区</li>
+                <li>床类专区</li>
+                <li>辅助家具</li>
+                <li>配件</li>
+            </ul>
+        </div>
+    </div>
+    <div id="div3"></div>
+    <div id="div4">
+        <ul id="ulss">
+            <!--<li onclick="javascript:location.href='shop.html' ">-->
+                <!--<a href="shop.html" class="thumb"><img src="img/product/chuang1.jpg"  /> </a>-->
+                <!--<span id="span0">优惠价:</span><span style="font-size: 18px;">￥1990.00</span>-->
+                <!--<span class="payName" style="color: #C0C0C0;float: right;margin-right: 10px;">已售210件</span>-->
+                <!--<h3 class="title2"><a href="shop.html">北欧风格简约风格1.8米大床</a></h3>-->
+                <!--<button class="button01">加入购物车</button>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="" class="thumb"><img src="img/product/chuang1.jpg"  /> </a>-->
+                <!--<span id="span0">优惠价:</span><span style="font-size: 18px;">￥1990</span>-->
+                <!--<span class="payName" style="color: #C0C0C0;float: right;margin-right: 10px;">已售210件</span>-->
+                <!--<h3 class="title2"><a href="">北欧风格简约风格1.8米大床</a></h3>-->
+                <!--<button class="button01">加入购物车</button>-->
+            <!--</li>-->
+        </ul>
+    </div>
+</div>
+<script src="js3/jquery-1.11.1.min.js"></script>
+<script>
+
+    var list = function() {
+        $.get("http://localhost:8080/goods/queryGoods/","json").done(function(data){
+            if(data.code==1){
+                $("#ulss li:gt(0)").remove();  //移除表格中除第一行以外的数据
+                $.each(data.data,function (index,obj) {
+                    //var ul = $("<ul class='service_list'>");onclick="javascript:location.href='' "
+                    var li=$("<li>");
+                    var a=$("<a class='thumb'><img src='img/product/"+obj.goodsImg+"'  /> </a>");
+                    var span=$("<span id='span0'>优惠价:</span><span style='font-size: 18px;'>￥"+obj.goodsUnitPrice+"</span>\n" +
+                        "<span class='payName' style='color: #C0C0C0;float: right;margin-right: 10px;'>已售210件</span>");
+                    var a2=$("<a>"+obj.goodsName+"</a>");
+                    var h3=$("<h3 class='title2'></h3>");
+                    var button=$("<button class='button01'>加入购物车</button>");
+                    a.appendTo(li);
+                    span.appendTo(li);
+                    a2.appendTo(h3).bind('click', function() {
+                        /* 显示标签的内容 */
+                        // alert($(this).text()); ///这种方式也可以正常打印出 hello
+                        window.location.href = "single-product.html?zvalue="+$(this).text();
+                    });
+                    h3.appendTo(li);
+                    button.appendTo(li);
+                    $("#ulss").append(li);
+                })
+            }
+
+            console.log(data);
+        }).fail(function(xhr, status, errorThrown){
+            alert("xhr："+xhr+"，status："+status+"，errorThrown："+errorThrown);
+        }).always(function(data, textStatus){
+            console.log("ajax执行完成，完成状态："+textStatus);
+        });
+    }
+    list();
+
+    $("#btn").click(function(){
+
+        var goodsName=$("#goodsName").val();
+
+        $.get("http://localhost:8080/goods/queryGoods",{"goodsName":goodsName}).done(function(data){
+
+            if(data.code==1){
+                //$("#ss li:gt(0)").remove();  //移除表格中除第一行以外的数据
+                $("#div4 ul:gt(0)").remove();
+                $("#div4").html("<ul id='ulss'></ul>");
+
+                $.each(data.data,function (index,obj) {
+                    var li=$("<li>");
+                    var a=$("<a class='thumb'><img src='img/product/"+obj.goodsImg+"'  /> </a>");
+                    var span=$("<span id='span0'>优惠价:</span><span style='font-size: 18px;'>￥"+obj.goodsUnitPrice+"</span>\n" +
+                        "<span class='payName' style='color: #C0C0C0;float: right;margin-right: 10px;'>已售210件</span>");
+                    var a2=$("<a>"+obj.goodsName+"</a>");
+                    var h3=$("<h3 class='title2'></h3>");
+                    var button=$("<button class='button01'>加入购物车</button>");
+                    a.appendTo(li);
+                    span.appendTo(li);
+                    a2.appendTo(h3).bind('click', function() {
+                        window.location.href = "single-product.html?zvalue="+$(this).text();
+                    });
+                    h3.appendTo(li);
+                    button.appendTo(li);
+                    $("#ulss").append(li);
+                })
+
+            }
+
+            console.log(data);
+        }).fail(function(xhr, status, errorThrown){
+            alert("xhr："+xhr+"，status："+status+"，errorThrown："+errorThrown);
+        }).always(function(data, textStatus){
+            console.log("ajax执行完成，完成状态："+textStatus);
+        });
+    });
+
+</script>
+</body>
+</html>
