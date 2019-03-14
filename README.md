@@ -1,4 +1,5 @@
 # furniture
+（项目做的不好，勿喷）
 项目首页
 ![项目首页](https://github.com/yingjiari/furniture/blob/master/Ying-webui/src/main/webapp/images/zs05.png)
 登录有做判断用户和密码，密码加密
@@ -7,3 +8,17 @@
 ![项目登录](https://github.com/yingjiari/furniture/blob/master/Ying-webui/src/main/webapp/images/zs04.png)
 商品查询页面
 ![项目登录](https://github.com/yingjiari/furniture/blob/master/Ying-webui/src/main/webapp/images/zs01.png)
+商品详情页，有判断是否登录
+![项目登录](https://github.com/yingjiari/furniture/blob/master/Ying-webui/src/main/webapp/images/zs06.png)
+购物车页面，有基本的商品和价格统计
+![项目登录](https://github.com/yingjiari/furniture/blob/master/Ying-webui/src/main/webapp/images/zs07.png)
+结算页面
+![项目登录](https://github.com/yingjiari/furniture/blob/master/Ying-webui/src/main/webapp/images/zs08.png)
+添加地址
+![项目登录](https://github.com/yingjiari/furniture/blob/master/Ying-webui/src/main/webapp/images/zs09.png)
+![项目登录](https://github.com/yingjiari/furniture/blob/master/Ying-webui/src/main/webapp/images/zs10.png)
+付款页面
+![项目登录](https://github.com/yingjiari/furniture/blob/master/Ying-webui/src/main/webapp/images/zs11.png)
+基于h-ui模板做的项目后台，实现基本增删（多删除）改查，上传图片，导入导出xlsx数据，多条件模糊查询，分页等
+![项目登录](https://github.com/yingjiari/furniture/blob/master/Ying-webui/src/main/webapp/images/zs12.png)
+![项目登录](https://github.com/yingjiari/furniture/blob/master/Ying-webui/src/main/webapp/images/zs13.png)
