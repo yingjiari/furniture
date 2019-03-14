@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间应该是对应接口的包名+接口名 -->
+<mapper namespace="com.yingjiari.zhaihou.dao.GoodsDao">
+    <!--id应该是接口中的方法，结果类型如没有配置别名则应该使用全名称 -->
+
+    <select id="goodsBy" resultType="Goods">
+        select goodsID,goodsName,goodsUnitPrice,sellCount,goodsImg from tb_goods
+    </select>
+    <select id="customerBy" resultType="Customer">
+        select customerName,customerPass from tb_customer
+    </select>
+    <select id="orderBy" resultType="Order">
+        select orderId from tb_order
+    </select>
+    <select id="ordersBys" resultType="Order">
+        select orderId,customerName,orderGoods,orderPrice,orderBoolean from tb_order
+        <where>
+            <if test="customerName!=null and customerName!=''">
+                customerName like concat(#{customerName})
+            </if>
+        </where>
+    </select>
+    <select id="ordersBy" resultType="Order">
+        select o1.orderId,o1.customerName,o1.orderBoolean,o1.orderGoods,o1.orderPrice,s1.siteCellphone,s1.siteSave,s1.siteCity,s1.siteDistrict,s1.siteTown,s1.siteDetails,s1.siteMail,s1.siteTag,siteBoolean from tb_order o1 inner join tb_customer c1 on o1.customerName=c1.customerName inner join tb_site s1 on c1.customerName=s1.customerName
+        <where>
+            <if test="customerName!=null and customerName!=''">
+                c1.customerName like concat(#{customerName})
+            </if>
+            <if test="siteBoolean>0">
+                and s1.siteBoolean like concat(#{siteBoolean})
+            </if>
+            <if test="orderId>0">
+                and o1.orderId like concat(#{orderId})
+            </if>
+        </where>
+    </select>
+    <select id="sitesBy" resultType="Site">
+        select c1.customerName,s1.siteId,s1.siteBoolean,s1.siteCellphone,s1.siteSave,s1.siteCity,s1.siteDistrict,s1.siteTown,s1.siteTag,s1.siteDetails from tb_site s1 inner join tb_customer c1 on s1.customerName=c1.customerName
+        <where>
+            <if test="customerName!=null and customerName!=''">
+                c1.customerName like concat(#{customerName})
+            </if>
+            <if test="siteBoolean>0">
+                and s1.siteBoolean like concat(#{siteBoolean})
+            </if>
+        </where>
+    </select>
+    <select id="siteBy" resultType="Customers">
+        select c1.customerName,s1.siteCellphone,s1.siteSave,s1.siteCity,s1.siteDistrict,s1.siteTown,s1.siteDetails,s1.siteMail,s1.siteTag,s2.shoppingNumber,g1.goodsonName,g1.goodsonImg,g1.goodsonPrice,g2.goodsName from tb_customer c1 inner join tb_site s1 on c1.customerName=s1.customerName inner join tb_shopping s2 on c1.customerName=s2.customerName inner join tb_goodson g1 on s2.goodsId=g1.goodsonId inner join tb_goods g2 on g1.goodsId=g2.goodsId
+        <where>
+            <if test="customerName!=null and customerName!=''">
+                c1.customerName like concat(#{customerName})
+            </if>
+            <if test="shoppingBoolean>0">
+                and s2.shoppingBoolean like concat(#{shoppingBoolean})
+            </if>
+        </where>
+    </select>
+    <select id="ordertedailsBy" resultType="Ordertedails">
+        select o2.customerName,o2.orderId,o2.orderBoolean,o2.orderPrice,g1.goodsonName,g1.goodsonImg,g1.goodsonPrice,o1.goodsonNumber from tb_ordertedails o1 inner join tb_order o2 on o1.orderId=o2.orderId inner join tb_goodson g1 on o1.goodsonId=g1.goodsonId
+        <where>
+            <if test="orderId>0">
+                o1.orderId like concat(#{orderId})
+            </if>
+            <if test="orderBoolean>=0">
+                and o2.orderBoolean like concat(#{orderBoolean})
+            </if>
+        </where>
+</select>
+    <select id="shoppingBy" resultType="Shopping">
+        select g2.goodsName,g1.goodsonId,g1.goodsonName,g1.goodsonImg,g1.goodsonPrice,s1.shoppingNumber,s1.shoppingId,s1.shoppingBoolean from tb_shopping s1 inner join tb_goodson g1 on s1.goodsId=g1.goodsonId inner join tb_customer c1 on s1.customerName=c1.customerName inner join tb_goods g2 on g1.goodsId=g2.goodsID
+        <where>
+            <if test="customerName!=null and customerName!=''">
+                c1.customerName like concat(#{customerName})
+            </if>
+            <if test="shoppingBoolean>0">
+                and shoppingBoolean like concat(#{shoppingBoolean})
+            </if>
+        </where>
+    </select>
+    <select id="goodsonBy" resultType="Goodson">
+        select g1.goodsName,g2.goodsonId,g2.goodsonName,g2.goodsonImg,g2.goodsonPrice,g2.goodsonkc from tb_goods g1 inner join tb_goodson g2 on g1.goodsID=g2.goodsId
+        <where>
+            <if test="goodsName!=null and goodsName!=''">
+                and goodsName like concat(#{goodsName})
+            </if>
+            <if test="goodsonName!=null and goodsonName!=''">
+                and goodsonName like concat(#{goodsonName})
+            </if>
+        </where>
+    </select>
+    <select id="goodsTypeBy" resultType="GoodsType">
+        select goodsTypeName from tb_goodstype
+    </select>
+    <!--模糊判断-->
+    <select id="goodsByName" resultType="Goods" parameterType="String">
+        SELECT goodsID,goodsName,goodsUnitPrice,sellCount,goodsImg
+        FROM tb_goods
+        <where>
+            <if test="goodsName!=null and goodsName!=''">
+                and goodsName like concat(concat('%',#{goodsName}),'%')
+            </if>
+        </where>
+    </select>
+
+    <!--登录查询-->
+    <select id="entryBy" resultType="Entry">
+        select zid,zname,zpwd,zdate from tb_entry
+    </select>
+
+    <!--删除-->
+    <delete id="goodsDelete" parameterType="String">
+        delete from tb_goods where goodsName=#{goodsName}
+    </delete>
+    <delete id="shoppingDelete" parameterType="int">
+        delete from tb_shopping where shoppingId=#{shoppingId}
+    </delete>
+    <delete id="shoppingsDelete" parameterType="Shopping">
+        delete from tb_shopping where shoppingBoolean=#{shoppingBoolean} and customerName=#{customerName}
+    </delete>
+    <!--添加-->
+    <insert id="goodsInsert" parameterType="Goods">
+        insert into tb_goods(goodsName,goodsUnitPrice,sellCount,goodsImg) VALUES(#{goodsName},#{goodsUnitPrice},'${sellCount}',#{goodsImg})
+    </insert>
+    <insert id="shoppingInsert" parameterType="Shopping">
+        insert into tb_shopping(goodsId,customerName,shoppingNumber) VALUES('${goodsId}',#{customerName},'${shoppingNumber}')
+    </insert>
+    <insert id="orderInsert" parameterType="Order">
+        insert into tb_order(orderId,customerName,orderBoolean,orderGoods,orderPrice) VALUES('${orderId}',#{customerName},'${orderBoolean}',#{orderGoods},#{orderPrice})
+    </insert>
+    <insert id="customerInsert" parameterType="Customer">
+        insert into tb_customer(customerName,customerPass,customerTrueName,customerPhone,customerIdcard) VALUES(#{customerName},#{customerPass},#{customerTrueName},#{customerPhone},#{customerIdcard})
+    </insert>
+    <insert id="siteInsert" parameterType="Site">
+        insert into tb_site(siteCellphone,siteDetails,siteMail,siteTag,customerName,siteBoolean)values('${siteCellphone}',#{siteDetails},'${siteMail}',#{siteTag},#{customerName},'${siteBoolean}')
+    </insert>
+    <insert id="ordertedailsInsert" parameterType="Ordertedails">
+        insert into tb_ordertedails(orderId,goodsonId,goodsonNumber)values ('${orderId}','${goodsonId}','${goodsonNumber}')
+    </insert>
+    <update id="shoppingUpdate" parameterType="Shopping">
+        update tb_shopping set shoppingBoolean=#{shoppingBoolean},shoppingNumber=#{shoppingNumber} where shoppingId=#{shoppingId}
+    </update>
+    <update id="siteUpdate" parameterType="Site">
+        update tb_site set siteBoolean=#{siteBoolean} where siteId=#{siteId}
+    </update>
+    <update id="orderBooleanUpdate" parameterType="Order">
+        update tb_order set orderBoolean=#{orderBoolean} where orderId=#{orderId}
+    </update>
+</mapper>
